@@ -2,14 +2,18 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 30%
+    right: 80%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 40%
+    right: 10%
+  &-3
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 81%
+    right: 70%
 
 @keyframes float1
   0%
@@ -17,3 +21,54 @@
 
   100%
     transform: translateY(0px)
+.banner-principal__row .banner-principal__img
+  img
+    margin: -3rem 0rem
+.banner-interno__fondo
+  background-image: url('../assets/curso/portada/banner_interno.svg') !important
+.titulo-circulo
+  position: relative
+  h3
+    display: inline-block
+    position: relative
+    color: #8054f8
+    z-index: 2
+    &::before
+      z-index: -1
+      content: ''
+      background-color: #dde0fa
+      width: 80%
+      height: 17px
+      position: absolute
+      display: inline-flex
+      bottom: 0
+      right: 10px
+    &:after
+      content: url('../assets/curso/temas/tema1/vineta.svg')
+      width: 20px
+      height: 9px
+      margin-left: .5rem
+      bottom: 0
+      position: relative
+code.codigo
+  background-color: black
+  color: white
+  padding: .3rem
+  font-weight: bold
+.tarjeta.border-left
+  border-left: 5px solid black
+.tarjeta.borde-izquierdo
+  overflow: hidden
+  background-color: #fff
+  position: relative
+  &:before
+    content: ''
+    background-color: #9673f6
+    height: 100%
+    width: 30px
+    left: 0
+    top: 0
+    position: absolute
+.tabla-b
+  tr, th, td
+    padding: .7rem
