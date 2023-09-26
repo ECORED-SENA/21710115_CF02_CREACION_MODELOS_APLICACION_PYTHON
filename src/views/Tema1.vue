@@ -469,6 +469,7 @@
             li.d-flex.mb-0
               i.fas.fa-angle-right.fa-xs
               p.mb-0 Es muy útil para resolver problemas de aprendizaje supervisado, no se recomienda para problemáticas de tipo de aprendizajes no supervisado como lo es el #[em Deep Learning]
+          
 
 
 
