@@ -166,8 +166,177 @@
           |<code class="codigo"> [[ 0.29851396 0.65165827 0.88150781 0.15657903 0.37648232]<br>[ 0.33269701 0.4549997 0.68407767 0.68343099 0.77983704]<br>[ 0.74589421 0.53109264 0.83403166 0.56529856 0.40442153]<br>[ 0.42269337 0.46910944 0.95015784 0.25355503 0.13611851]<br>[ 0.5528267 0.87792271 0.84945654 0.26660765 0.68067849]] </code>
         .tarjeta.p-3(style="background-color: #d3c3fd")
           p.mb-0 Con esta robusta librería se pueden realizar todo tipo de operaciones basadas en arreglos unidimensionales y multidimensionales.
+    .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
+      .row.justify-content-center.mb-1.p-4
+        .col-lg-1.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/5.svg', alt='')
+        .col-lg-11
+          p #[b ● Matplotlib:] es una biblioteca muy útil para realizar gráficos estáticos, animados e interactivos. Los gráficos son muy útiles para realizar análisis de información permitiendo agrupar grandes volúmenes de datos en representaciones visuales que permiten una mejor comprensión.
+            br
+            br
+            |Para usar esta librería se debe realizar la importación de la siguiente forma:
+            br
+            br
 
-      
+            | #[code.codigo import matplotlib.pyplot as plt]
+    .row.justify-content-center.mb-5
+      .col-lg-4.d-none.d-lg-block(data-aos="fade-right").mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/6.png', alt='')
+      .col-lg-6(data-aos="fade-left")
+        p A continuación, se ve un ejemplo de un gráfico que realiza la simulación de ventas de diferentes productos, mostrando la participación porcentual de cada uno de ellos, y para este caso se usará un gráfico muy útil para visualizar la participación porcentual de cada uno de ellos con respecto al total; estos son los conocidos como gráficos de torta.
+          br
+          br
+          |Para realizar este ejemplo es necesario realizar algunos pasos que se podrán conocer revisando el recurso propuesto:
+        LineaTiempoD.color-primario
+          p(numero="A" titulo="Primero") Realice la importación de las librerías en Python de la siguiente manera.
+            br
+            |#[code.codigo import matplotlib.pyplot as plt.]
+          p(numero="B" titulo="Segundo") Defina las etiquetas que representan las salidas de los datos, para este ejemplo serán productos que representan frutas. 
+            br
+            |#[code.codigo etiquetas = 'Manzanas', 'Peras', 'Mangos', 'Fresas']
+          p(numero="C" titulo="Tercero") Establezca los valores que representan cada uno de los productos definidos. valores =  #[code.codigo  [25, 15, 45, 5]]
+          p(numero="D" titulo="Cuarto") Si quiere resaltar una rebana de la torta, por ejemplo las peras, se debe establecer una variable de la siguiente manera.
+            br
+            |#[code.codigo rebanada=(0,0.1,0,0)]
+          p(numero="E" titulo="Quinto") Como se observa en el paso anterior, el 0.1 establece una separación del producto número dos correspondiente a las peras, de acuerdo con el número al aumentar el valor la separación de la torta será mayor.
+          p(numero="F" titulo="Sexto") Para visualizar el gráfico use las siguientes líneas de código. Ubicando cada una de las variables definidas anteriormente como se muestra a continuación.
+            |#[code.codigo fig1, ax1 = plt.subplots() ax1.pie(valores, explode=rebanada, labels=etiquetas, autopct='%1.1f%%', shadow=True, startangle=90) ax1.axis('equal')]
+          div(numero="G" titulo="Séptimo")
+            p Finalmente, el resultado que se obtiene es el siguiente:
+            .row.justify-content-center.mb-5
+              .col-lg-10
+                img(src='@/assets/curso/temas/tema1/7.png', alt='')
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-10
+        .tarjeta.overflow-hidden(style="background-color: #D3C3FD")
+          .row.justify-content-center.align-items-center.g-0.p-lg-0.p-4
+            .col-lg-1.col-8.mb-lg-0.mb-3
+              img(src='@/assets/curso/temas/tema1/8.svg', alt='')
+            .col-lg-11
+                p.mb-0.ms-lg-4 Vemos que la visualización de los datos se puede realizar muy fácilmente, de igual manera se pueden realizar múltiples gráficos como histogramas de frecuencia, barras, diagrama de caja y bigotes, dispersión y, en general, muchos tipos de gráficos, que de acuerdo con el problema, se pueden implementar.
+    .tarjeta.p-5.mb-5(style="background-color: #DBEFED")
+      .row.justify-content-center
+        .col-lg-1.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/9.svg', alt='')
+        .col-lg-11
+          p #[b Scikit-learn:] esta es una librería muy importante para todo lo que tiene que ver con aprendizaje automático. Esta biblioteca ofrece una estructura muy fácil y a la vez muy robusta que permite la creación de modelos de Machine Learning. Se utiliza en el aprendizaje, transformación y predicción desde una colección de datos específica y se pueden utilizar igualmente en el diseño de modelos de agrupación,regresión y clasificación; por otro lado, también es utilizada para el procesamiento y análisis de tipo estadístico, evaluando los modelos entre muchas más funcionalidades.
+            br
+            br
+            |Se realizará a continuación un pequeño ejemplo donde se implemente esta librería, dependiendo la siguiente colección de datos, se requiere realizar el aprendizaje de los datos, crear el modelo y finalmente realizar una predicción de nuevas entradas.
+            br
+            br
+            |La colección de datos con la que se realizará el ejemplo es la siguiente:
+          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+            h5 Tabla 1
+            span Colección de datos de ejemplo
+          .tabla-a.color-acento-contenido.mb-3
+            table.text-center
+              tr.fw-bold.bg-white
+                td(style='border: 1px solid #8054f8') Items
+                td(style='border: 1px solid #8054f8') Salario (millones)
+                td(style='border: 1px solid #8054f8') Hijos (unidades)
+                td(style='border: 1px solid #8054f8') Estado
+                td(style='border: 1px solid #8054f8') Clase
+              tr.bg-white
+                td(style='border: 1px solid #8054f8') 1
+                td(style='border: 1px solid #8054f8') 5
+                td(style='border: 1px solid #8054f8') 2
+                td(style='border: 1px solid #8054f8') Casado(1)
+                td(style='border: 1px solid #8054f8') Aprobado(1)
+              tr.bg-white
+                td(style='border: 1px solid #8054f8') 2
+                td(style='border: 1px solid #8054f8') 4
+                td(style='border: 1px solid #8054f8') 1
+                td(style='border: 1px solid #8054f8') Casado(1)
+                td(style='border: 1px solid #8054f8') Aprobado(1)
+              tr.bg-white
+                td(style='border: 1px solid #8054f8') 3
+                td(style='border: 1px solid #8054f8') 3.5
+                td(style='border: 1px solid #8054f8') 0
+                td(style='border: 1px solid #8054f8') Soltero(2)
+                td(style='border: 1px solid #8054f8') Aprobado(1)
+              tr.bg-white
+                td(style='border: 1px solid #8054f8') 4
+                td(style='border: 1px solid #8054f8') 1.5
+                td(style='border: 1px solid #8054f8') 4
+                td(style='border: 1px solid #8054f8') Casado(1)
+                td(style='border: 1px solid #8054f8') Reprobado(0)
+              tr.bg-white
+                td(style='border: 1px solid #8054f8') 5 
+                td(style='border: 1px solid #8054f8') 1
+                td(style='border: 1px solid #8054f8') 3
+                td(style='border: 1px solid #8054f8') Soltero(2)
+                td(style='border: 1px solid #8054f8') Reprobado(0)
+              tr.bg-white
+                td(style='border: 1px solid #8054f8') 6
+                td(style='border: 1px solid #8054f8') 0.8
+                td(style='border: 1px solid #8054f8') 2
+                td(style='border: 1px solid #8054f8') Casado(1)
+                td(style='border: 1px solid #8054f8') Reprobado(0)
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
+        p Esta es una pequeña muestra que simula si se aprueba o reprueba un crédito de una entidad bancaria, en la cual se tienen 6 ejemplos o instancias con tres características o atributos, denominados salario, hijos y estado, y estos se clasifican en dos clases aprobado y reprobado.
+          br
+          br
+          |Se quiere realizar un modelo para realizar la predicción dependiendo a nuevas entradas, si se aprueban o reprueban créditos. Para realizar este ejemplo es necesario realizar algunos pasos que se podrán conocer revisando el recurso propuesto:
+      .col-lg-4.col-4: img(src='@/assets/curso/temas/tema1/10.png', alt='')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>
 
 <script>
