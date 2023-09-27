@@ -36,34 +36,49 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: '',
+        titulo: 'Implementar entorno de trabajo con Python',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
-            hash: 't_1_1',
-          },
-        ],
       },
 
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: '',
+        titulo: 'Análisis exploratorio',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: '',
+        titulo: 'Preprocesamiento de los datos con Python',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: '',
+        titulo: 'Crear el modelo',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo: 'Entrenamiento',
+            hash: 't_4_1',
+          },
+          {
+            numero: '4.2',
+            titulo: 'Evaluación',
+            hash: 't_4_2',
+          },
+          {
+            numero: '4.3',
+            titulo: 'Predicciones',
+            hash: 't_4_3',
+          },
+          {
+            numero: '4.4',
+            titulo: 'Evaluar el modelo y análisis de errores',
+            hash: 't_4_4',
+          },
+        ],
       },
     ],
     subMenu: [
