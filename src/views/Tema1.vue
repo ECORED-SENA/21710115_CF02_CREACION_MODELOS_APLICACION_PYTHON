@@ -21,15 +21,15 @@
       .col-lg-10
         figure
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-          figcaption Video: Leyenda del video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/zQy7UBGsWac?si=ivbwuBJnll5FU-8x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          figcaption Video. Instalación de Anaconda
     p.mb-5(data-aos='fade-right') Ahora bien, para desplegar un entorno de trabajo con JupiterLab se deben seguir los siguientes pasos dados en el recurso:
     .row.justify-content-center.mb-5
       .col-lg-10
         figure
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-          figcaption Video: Leyenda del video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/Di-A8a_nCiU?si=r_Pf-BNw7wbpsnVJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          figcaption Video. Pasos para un entorno de trabajo con JupiterLab
     p.mb-5(data-aos='fade-right') Después de realizar las instalaciones de las herramientas para el desarrollo del proyecto de Machine Learning se requiere del uso de ciertas librerías especializadas para el tratamiento de los datos, de las cuales se hablará a continuación.
     .titulo-circulo.mb-4(data-aos="fade-right")
       h3 Librerías para trabajar #[em Machine Learning]
@@ -38,8 +38,8 @@
       .col-lg-10
         figure
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-          figcaption Video: Leyenda del video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/FgO1iafKoEE?si=nEby-QGtnf264OVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          figcaption Video. Importación de librerías
     p.mb-5(data-aos='fade-right') Entre los tipos de librerías se encuentran:
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee" data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4

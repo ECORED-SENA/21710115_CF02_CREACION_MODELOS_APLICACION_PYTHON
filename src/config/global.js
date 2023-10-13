@@ -128,32 +128,103 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: '4. Crear el modelo',
+      referencia:
+        'SDC LEARNING. ( 2022). Webinar Gratuito Mi Primer Modelo de Machine Learning en Python. [Video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=9HKfqinJJAo',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: '4. Crear el modelo',
+      referencia:
+        'Parra, F. (2022). 6 Métodos de clasificación | <em>Estadística y Machine Learning</em> con R. Algoritmo de Clasificación.',
+      tipo: 'Página web',
+      link: 'https://bookdown.org/content/2274/metodos-de-clasificacion.html',
+    },
+    {
+      tema: '4.4. Evaluar el modelo y análisis de errores',
+      referencia:
+        'González, L. (2020). <em>Evaluando el error en los modelos de clasificación.</em> Aprende IA.',
+      tipo: 'Página web',
+      link:
+        'https://aprendeia.com/evaluando-el-error-en-los-modelos-de-clasificacion-machine-learning/',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Scikit-learn',
+      significado:
+        'librería especializada para proyectos de <em>Machine Learning</em> y ampliamente utilizada por todo el mundo.',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'Algoritmos de clasificación',
+      significado:
+        'hacen parte del aprendizaje supervisado y se caracterizan por que los modelos se entrenan con las instancias y sus respectivas clasificaciones.',
+    },
+    {
+      termino: 'Naive Bayes',
+      significado:
+        'algoritmo de clasificación utilizado en problemas donde las salidas son binarias.',
+    },
+    {
+      termino: 'Matriz de confusió',
+      significado:
+        'es una métrica para establecer el nivel de error, precisión y otras medidas en los modelos de <em>Machine Learning.</em>',
+    },
+    {
+      termino: 'Entrenamiento',
+      significado:
+        'proceso que se realiza para que los modelos aprendan de los datos.',
+    },
+    {
+      termino: 'Preprocesamiento',
+      significado:
+        'manipulación que se realiza a los datos con el objetivo de entregarlos al modelo como este lo requiera.',
+    },
+    {
+      termino: 'Evaluación',
+      significado:
+        'análisis de eficiencia con el que el modelo predice los datos, generalmente se contrasta con una colección de pruebas separada previamente.',
+    },
+    {
+      termino: 'Predicciones',
+      significado:
+        'capacidad del modelo para clasificar entradas nuevas, de acuerdo con un entrenamiento previo.',
     },
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'González, L. (2020). <em>Regresión Logística- Teoría.</em> Aprende IA.',
+      link:
+        'https://aprendeia.com/algoritmo-regresion-logistica-machine-learning-teoria/#:~:text=La%20Regresi%C3%B3n%20Lineal%20proporciona%20una,el%20precio%20de%20una%20acci%C3%B3n',
+    },
+    {
+      referencia:
+        'Miller, V. (2020). <em>Explorando Algoritmos de Aprendizaje Automático Supervisado.</em> Toptal Engineering Blog.',
+      link:
+        'https://www.toptal.com/machine-learning/explorando-algoritmos-de-aprendizaje-automatico-supervisado',
+    },
+    {
+      referencia:
+        'Román, V. (2019). <em>Machine Learning: Cómo Desarrollar un Modelo desde Cero.</em> Medium',
+      link:
+        'https://medium.com/datos-y-ciencia/machine-learning-c%C3%B3mo-desarrollar-un-modelo-desde-cero-cc17654f0d48',
+    },
+    {
+      referencia:
+        'Román, V. (2019). <em>Aprendizaje Supervisado: Introducción a la Clasificación y Principales Algoritmos.</em> Medium.',
+      link:
+        'https://medium.com/datos-y-ciencia/aprendizaje-supervisado-introducci%C3%B3n-a-la-clasificaci%C3%B3n-y-principales-algoritmos-dadee99c9407',
+    },
+    {
+      referencia: 'SMS <em>Spam Collection Dataset.</em> (s.f.). Kaggle',
+      link: 'https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset',
+    },
+    {
+      referencia:
+        'Sotaquirá, M. (2021). <em>¿Se requiere SQL para trabajar en Machine Learning?</em> Codificando Bits',
+      link: 'https://www.codificandobits.com/blog/sql-machine-learning/',
     },
   ],
   creditos: [
@@ -177,8 +248,30 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
+          nombre: 'Ronald Alexander Vacca Ascanio',
+          cargo: 'Experto Temático',
+          centro:
+            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+        },
+        {
+          nombre: 'Jeimy Lorena Romero Perilla',
+          cargo: 'Diseñador Instruccional',
+          centro:
+            'Regional Norte de Santander - Centro de la industria, la empresa y los servicios',
+        },
+        {
+          nombre: 'Carolina Coca Salazar',
+          cargo: 'Asesora Metodológica',
+          centro: 'Regional Distrito Capital- Centro de Diseño y Metrología',
+        },
+        {
+          nombre: 'Jhon Jairo Rodríguez Pérez',
+          cargo: 'Corrector de estilo',
+          centro: 'Regional Distrito Capital - Centro de Diseño y Metrología',
+        },
+        {
+          nombre: 'Miroslava González Hernández',
+          cargo: 'Diseñadora Instruccional',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },
@@ -188,25 +281,31 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Juan Daniel Polanco',
           cargo: 'Diseñador de Contenidos Digitales',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Camilo Andres Bolaño Rey',
           cargo: 'Desarrollador Fullstack',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },
         {
-          nombre: 'Nombre',
+          nombre: 'Camilo Andres Bolaño Rey',
+          cargo: 'Locución',
+          centro:
+            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+        },
+        {
+          nombre: 'Daniela Muñoz Bedoya',
           cargo: 'Animador y Producción audiovisual',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },
         {
-          nombre: 'Nombre',
+          nombre: 'Emilsen Bautista',
           cargo: 'Actividad Didáctica',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
