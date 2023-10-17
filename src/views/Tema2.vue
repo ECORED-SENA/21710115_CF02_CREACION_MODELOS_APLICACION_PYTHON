@@ -5,11 +5,11 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 2
-      h1 Análisis Exploratorio
+      h1 Análisis exploratorio
     .row.justify-content-center.mb-5
       .col-lg-4.col-8(data-aos="fade-right").mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema2/1.png', alt='')
       .col-lg-8
-        p Como se sabe este es uno de los pasos más importantes en los proyectos de ciencia de datos pues ayuda a entender los datos y a establecer si existe algún tipo de problema; desde allí, se determinan acciones para corregirlos o adecuarlos dependiendo de las necesidades identificadas.
+        p Como se sabe, este es uno de los pasos más importantes en los proyectos de ciencia de datos, pues ayuda a entender los datos y a establecer si existe algún tipo de problema; desde allí, se determinan acciones para corregirlos o adecuarlos dependiendo de las necesidades identificadas.
           br
           br
           |Para entender mejor lo anteriormente dicho se desarrollará un ejemplo centrado en la creación de un modelo que permita la identificación de correos que pueden llegar a ser maliciosos.
@@ -26,7 +26,7 @@
         div.p-5(style="background-color: #dbefed ")
           .titulo-pasos.mb-5
             h4.mb-0 Paso 1
-          p.mb-5(data-aos='fade-right') Entorno configurado: lo primero que se debe hacer es asegurarse de tener el entorno de trabaja configurado, en caso de no ser así, remitirse la primera parte de este componente y realice el proceso.
+          p.mb-5(data-aos='fade-right') #[b Entorno configurado:] lo primero que se debe hacer es asegurarse de tener el entorno de trabajo configurado, en caso de no ser así, remítase a la primera parte de este componente y realice el proceso. 
           .titulo-pasos.mb-5
             h4.mb-0 Paso 2
           p.mb-5(data-aos='fade-right') Abrir la aplicación JupiterLab de Anaconda y crear un nuevo Notebook. Observe la imagen

@@ -30,7 +30,7 @@
           .video
             iframe(width="560" height="315" src="https://www.youtube.com/embed/Di-A8a_nCiU?si=r_Pf-BNw7wbpsnVJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
           figcaption Video. Pasos para un entorno de trabajo con JupiterLab
-    p.mb-5(data-aos='fade-right') Después de realizar las instalaciones de las herramientas para el desarrollo del proyecto de Machine Learning se requiere del uso de ciertas librerías especializadas para el tratamiento de los datos, de las cuales se hablará a continuación.
+    p.mb-5(data-aos='fade-right') Después de realizar las instalaciones de las herramientas para el desarrollo del proyecto de #[em Machine Learning] se requiere del uso de ciertas librerías especializadas para el tratamiento de los datos, de las cuales se hablará a continuación.
     .titulo-circulo.mb-4(data-aos="fade-right")
       h3 Librerías para trabajar #[em Machine Learning]
     p.mb-5(data-aos='fade-right') La alta demanda del lenguaje de programación Python ha desbordado toda serie de librerías que ayudan a múltiples tareas, facilitando el trabajo y haciéndolo cada vez más rápido y eficiente. Por tanto y para este caso, se utilizarán librerías propias de proyectos de ciencia de datos. En el siguiente video se expone el proceso de importación:
@@ -103,7 +103,7 @@
               th(style='border: 1px solid #8054f8') 4 ham
               td(style='border: 1px solid #8054f8') Nah I don't think he goes to usf, he lives aro...
         .tarjeta.borde-izquierdo.p-4(style="background-color: #d3c3fd ")
-          p.ms-3.mb-0 Este comando permitirá visualizar una muestra de los datos, la librería panda es muy útil para todo el manejo y manipulación de datos. ya que con muy pocas líneas de código se puede realizar procedimientos complejos.
+          p.ms-3.mb-0 Este comando permitirá visualizar una muestra de los datos; la librería panda es muy útil para todo el manejo y manipulación de datos, ya que con muy pocas líneas de código se puede realizar procedimientos complejos
       .col-lg-5.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/3.png', alt='')
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4
@@ -170,7 +170,7 @@
       .row.justify-content-center.mb-1.p-4
         .col-lg-1.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/5.svg', alt='')
         .col-lg-11
-          p #[b ● Matplotlib:] es una biblioteca muy útil para realizar gráficos estáticos, animados e interactivos. Los gráficos son muy útiles para realizar análisis de información permitiendo agrupar grandes volúmenes de datos en representaciones visuales que permiten una mejor comprensión.
+          p #[b ● Matplotlib:] es una biblioteca muy útil para realizar gráficos estáticos, animados e interactivos. Los gráficos son muy útiles para hacer análisis de información, permitiendo agrupar grandes volúmenes de datos en representaciones visuales que permiten una mejor comprensión.
             br
             br
             |Para usar esta librería se debe realizar la importación de la siguiente forma:
@@ -193,7 +193,7 @@
             br
             |#[code.codigo etiquetas = 'Manzanas', 'Peras', 'Mangos', 'Fresas']
           p(numero="C" titulo="Tercero") Establezca los valores que representan cada uno de los productos definidos. valores =  #[code.codigo  [25, 15, 45, 5]]
-          p(numero="D" titulo="Cuarto") Si quiere resaltar una rebana de la torta, por ejemplo las peras, se debe establecer una variable de la siguiente manera.
+          p(numero="D" titulo="Cuarto") Si quiere resaltar una rebanada de la torta, por ejemplo las peras, se debe establecer una variable de la siguiente manera.
             br
             |#[code.codigo rebanada=(0,0.1,0,0)]
           p(numero="E" titulo="Quinto") Como se observa en el paso anterior, el 0.1 establece una separación del producto número dos correspondiente a las peras, de acuerdo con el número al aumentar el valor la separación de la torta será mayor.
@@ -217,13 +217,16 @@
       .row.justify-content-center
         .col-lg-1.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/9.svg', alt='')
         .col-lg-11
-          p #[b Scikit-learn:] esta es una librería muy importante para todo lo que tiene que ver con aprendizaje automático. Esta biblioteca ofrece una estructura muy fácil y a la vez muy robusta que permite la creación de modelos de #[em Machine Learning.] Se utiliza en el aprendizaje, transformación y predicción desde una colección de datos específica y se pueden utilizar igualmente en el diseño de modelos de agrupación,regresión y clasificación; por otro lado, también es utilizada para el procesamiento y análisis de tipo estadístico, evaluando los modelos entre muchas más funcionalidades.
-            br
-            br
-            |Se realizará a continuación un pequeño ejemplo donde se implemente esta librería, dependiendo la siguiente colección de datos, se requiere realizar el aprendizaje de los datos, crear el modelo y finalmente realizar una predicción de nuevas entradas.
-            br
-            br
-            |La colección de datos con la que se realizará el ejemplo es la siguiente:
+          ul.lista-ul.mb-1
+            li.d-flex.mb-0
+              i.fas.fa-circle.fa-xs
+              p #[b Scikit-learn:] esta es una librería muy importante para todo lo que tiene que ver con aprendizaje automático. Esta biblioteca ofrece una estructura muy fácil y a la vez muy robusta que permite la creación de modelos de #[em Machine Learning.] Se utiliza en el aprendizaje, transformación y predicción desde una colección de datos específica y se pueden utilizar igualmente en el diseño de modelos de agrupación, regresión y clasificación; por otro lado, también es utilizada para el procesamiento y análisis de tipo estadístico, evaluando los modelos entre muchas más funcionalidades.
+                br
+                br
+                |Se realizará a continuación un pequeño ejemplo donde se implemente esta librería, dependiendo la siguiente colección de datos, se requiere realizar el aprendizaje de los datos, crear el modelo y finalmente realizar una predicción de nuevas entradas.
+                br
+                br
+                |La colección de datos con la que se realizará el ejemplo es la siguiente:
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
             h5 Tabla 1
             span Colección de datos de ejemplo
@@ -308,7 +311,7 @@
           p.text-small(numero="3" titulo="Paso 3") Realice la tabulación de la clase, en una variable separada y coloque la tabulación de las clases de la siguiente manera.
             br
             |<code class="codigo">etiquetas=np.array([1,1,1,0,0,0])</code>
-          p.text-small(numero="4" titulo="Paso 3") Importar las librerías necesarias para seleccionar el algoritmo de clasificación que se utilizará en la creación del modelo, que para nuestro ejemplo será el de árbol de decisión.
+          p.text-small(numero="4" titulo="Paso 4") Importar las librerías necesarias para seleccionar el algoritmo de clasificación que se utilizará en la creación del modelo, que para nuestro ejemplo será el de árbol de decisión.
             br
             |<code class="codigo">from sklearn import tree</code>
           p.text-small(numero="5" titulo="Paso 5") Seleccione el algoritmo de árbol de decisión de la siguiente manera, en la variable clasificador se armará el modelo.
@@ -322,14 +325,17 @@
             |<code class="codigo "> res=clasificador.predict(nuevaEntrada) <br> if res==1: print('Aprobado')<br> else: pritn('Reprobado')</code>
             br
             br
-            |El resultado para la siguiente entrada es Aprobado(1), esta entrada nueva corresponde a información con la que el modelo fue entrenado, lo ideal es dejar un porcentaje de los datos para pruebas con los que no se entrene el modelo para verificar la eficiencia, normalmente se deja un veinte por ciento para esta labor.
-          p.text-small(numero="8" titulo="Paso 8") Finalmente quedo todo el diseño de un modelo usando el algoritmo clasificatorio de árboles de decisión.
+            |El resultado para la siguiente entrada es #[b Aprobado (1)], esta entrada nueva corresponde a información con la que el modelo fue entrenado, lo ideal es dejar un porcentaje de los datos para pruebas con los que no se entrene el modelo para verificar la eficiencia, normalmente se deja un veinte por ciento para esta labor.
+          p.text-small(numero="8" titulo="Paso 8") Finalmente, quedo todo el diseño de un modelo usando el algoritmo clasificatorio de árboles de decisión.
             |<code class="codigo" >#Importar las Librerias <br> import numpy as np<br>from sklearn import tree <br># Definir las Instancias<br>creditos = [[5, 2, 1],[4, 1, 1],[3.5, 0, 2],[1.5, 4, 1],[1, 3, 2],[0.8, 2, 1]<br>instancias=np.array(creditos)<br># Definir las Salidas etiquetas=np.array([1,1,1,0,0,0])<br><br># Seleccionar el algoritmo de Calsificacion<br>clasificador=tree.DecisionTreeClassifier()<br><br># Realizar el Entrenamiento<br>clasificador.fit(instancias, etiquetas)<br><br># Realizar las Predicciones<br>nuevaEntrada=[[5, 2, 1]]<br>res=clasificador.predict(nuevaEntrada)<br>if res==1:<br>print('Aprobado')<br>else:<br>pritn('Reprobado')<br><br>Resultado: Aprobado </code>
     .tarjeta.p-5.mb-5(style="background-color: #DBEFED")
       .row.justify-content-center
         .col-lg-1.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/11.png', alt='')
         .col-lg-11
-          p #[b NKLT:] el Natural Language Toolkit (NLTK) es un conjunto de librerías y programas para Python que permiten llevar a cabo muchas tareas relacionadas con el Procesamiento del Lenguaje Natural. Muchas de las tareas que se necesitarán hacer ya estarán programadas de manera eficiente en NLTK y se podrán usar directamente en los programas. Además de los programas, se distribuyen también corpus y otros datos lingüísticos. Es una plataforma muy útil tanto para la enseñanza cómo para el desarrollo y la investigación.
+          ul.lista-ul.mb-1
+            li.d-flex.mb-0
+              i.fas.fa-circle.fa-xs
+              p #[b NKLT:] el Natural Language Toolkit (NLTK) es un conjunto de librerías y programas para Python que permiten llevar a cabo muchas tareas relacionadas con el Procesamiento del Lenguaje Natural. Muchas de las tareas que se necesitarán hacer ya estarán programadas de manera eficiente en NLTK y se podrán usar directamente en los programas. Además de los programas, se distribuyen también corpus y otros datos lingüísticos. Es una plataforma muy útil tanto para la enseñanza como para el desarrollo y la investigación.
     p.mb-5(data-aos='fade-right') Las principales ventajas y desventajas de cada una de las librerías se presentan a continuación.
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
@@ -340,25 +346,25 @@
           h5 Ventajas
           ul.lista-ul.mb-1
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Tiene estructuras de datos descriptivas, rápidas y compatibles.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Soporta operaciones como agrupar, integrar, iterar, reindexar y representar datos.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0  Es muy flexible para su uso en asociación con otras librerías de Python.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0  Contiene funcionalidades inherentes a la manipulación de datos que pueden implementarse utilizando comandos mínimos.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Se puede implementar en una gran variedad de áreas, especialmente relacionadas con los negocios y la educación, debido a su rendimiento optimizado.
       div(style="background-color: #d3c3fd").p-4
         h5 Desventajas
         ul.lista-ul.mb-1
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Es mucho menos adecuada para el modelado cuantitativo y matrices n-dimensionales. En estos escenarios, donde se necesita trabajar en modelado cuantitativo o estadístico, se utiliza NumPy.
         
         
@@ -366,45 +372,45 @@
       .row.mb-1.p-4
         .col-lg-1.col-6.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/4.png', alt='').mb-2
-          h4 Titulo
+          h4 Numpy
         .col-lg-12
           h5 Ventajas
           ul.lista-ul.mb-1
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Intuitivo e interactivo.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Ofrece transformadas de Fourier, capacidad de números aleatorios y otras herramientas para integrar lenguajes de programación como C, C++ y Fortran.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Puede tratar fácilmente con datos multidimensionales.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Ayuda en la manipulación matricial de datos y operaciones como la transposición, la matriz identidad y mucho más.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Permite mejorar el rendimiento y la gestión de la recolección de basura al proporcionar una estructura de datos dinámica. 
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Permite mejorar el rendimiento de los modelos de Machine Learning.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Otras librerías de Machine Learning como Scikit Learn y TensorFlow utilizan matrices NumPy como entrada.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Tiene un gran apoyo y contribuciones de la comunidad de código abierto.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Simplifica las implementaciones matemáticas complejas.
       div(style="background-color: #d3c3fd").p-4
         h5 Desventajas
         ul.lista-ul.mb-1
           li.d-flex.mb-0
-            i.fas.fa-angle-right.fa-xs
+            i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
             p.mb-0 Es altamente dependiente de entidades fuera de Python. Utiliza Cython y otras librerías que utilizar C o C++.
           li.d-flex.mb-0
-            i.fas.fa-angle-right.fa-xs
+            i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
             p.mb-0 Sus tipos de datos son nativos de hardware y no nativos de Python, por lo que cuesta mucho cuando las entidades NumPy tienen que ser traducidas de nuevo a entidades equivalentes a Python y viceversa.
         
         
@@ -417,29 +423,29 @@
           h5 Ventajas
           ul.lista-ul.mb-1
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Soporta shells de Python y IPython, scripts de Python, Jupyter Notebook, servidores de aplicaciones web y muchos kits de herramientas de interfaz gráfica.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Opcionalmente, ofrece una interfaz parecida a la de MATLAB para realizar trazados sencillos.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0  La interfaz orientada a objetos ofrece un control completo de las propiedades de los ejes, las propiedades de las fuentes, los estilos de líneas y muchos más.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Ayuda a producir gráficos que son configurables, potentes y precisos.
 
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Compatible con varios backends de gráficos y sistemas operativos.
       div(style="background-color: #d3c3fd").p-4
         h5 Desventajas
         ul.lista-ul.mb-1
           li.d-flex.mb-0
-            i.fas.fa-angle-right.fa-xs
+            i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
             p.mb-0 Curva de aprendizaje lenta.
           li.d-flex.mb-0
-            i.fas.fa-angle-right.fa-xs
+            i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
             p.mb-0  No tiene identificadores protegido.
         
         
@@ -452,22 +458,22 @@
           h5 Ventajas
           ul.lista-ul.mb-1
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Contiene un paquete completo de métodos que se pueden implementar para los algoritmos estándar de #[em Machine Learning.]
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0  Su interfaz es sencilla y bien definida que permite realizar ajustes y trasformaciones a los modelos para cualquier colección de datos.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Es la mejor opción para la creación de pipelines, que permiten la construcción de un prototipo más rápido.
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Es una de las mejores librerías para realizar un despliegue confiable de modelos de #[em Machine Learning.]
       div(style="background-color: #d3c3fd").p-4
         h5 Desventajas
         ul.lista-ul.mb-1
             li.d-flex.mb-0
-              i.fas.fa-angle-right.fa-xs
+              i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Es muy útil para resolver problemas de aprendizaje supervisado, no se recomienda para problemáticas de tipo de aprendizajes no supervisado como lo es el #[em Deep Learning]
           
 

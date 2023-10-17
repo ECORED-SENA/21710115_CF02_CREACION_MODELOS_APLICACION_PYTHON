@@ -20,7 +20,7 @@
             .col-lg-6.mb-lg-0.mb-3
               h4(style="color: #8054F8") Paso 1 Separación de datos
 
-              p Se deben separar los datos en los datos entrenamiento y las clases de la siguiente manera, el dataframe mensaje corresponde a las instancias y atributos, mientras que las etiquetas a las clases.
+              p Se deben separar los datos en los datos entrenamiento y las clases de la siguiente manera, el #[em dataframe] mensaje corresponde a las instancias y atributos, mientras que las etiquetas a las clases.
 
                 br
                 br
@@ -36,7 +36,7 @@
 
                 br
                 br
-                |El resultado es un dataframe independiente en el que se dividen los datos de aprendizaje de las clases, como se observa en la imagen.
+                |El resultado es un #[em dataframe] independiente en el que se dividen los datos de aprendizaje de las clases, como se observa en la imagen.
             .col-lg-6
               img(src='@/assets/curso/temas/tema4/2.png', alt='').mb-4
               p Separación de los datos
@@ -59,7 +59,7 @@
           .row.justify-content-center.mb-5
             .col-lg-6.mb-lg-0.mb-3
               h4(style="color: #8054F8") Paso 3 Objetivo encontrado
-              p Ya se ha logrado cuantificar cada una de las palabras del texto de tal manera que estos serán los datos con los que entrenaremos el modelo. Lo que resta es almacenar esta variable a una que servirá para el siguiente paso del entrenamiento, para el ejemplo la denominaremos instancias.
+              p Ya se ha logrado cuantificar cada una de las palabras del texto de tal manera que estos serán los datos con los que entrenaremos el modelo. Lo que resta es almacenar esta variable a una que servirá para el siguiente paso del entrenamiento, para el ejemplo la denominaremos #[B instancias.]
             .col-lg-6
               img(src='@/assets/curso/temas/tema4/4.svg', alt='').mb-4
     Separador
@@ -80,7 +80,7 @@
             .row.justify-content-center.mb-5
               .col-lg-5: img(src='@/assets/curso/temas/tema4/6.svg', alt='')
             h5 Separar los datos
-            p Reserve una muestra que por lo general equivalen al veinte por ciento de los datos, los cuales debe asegurarse que no se utilizaron en el aprendizaje.
+            p Reserve una muestra que por lo general equivale al veinte por ciento de los datos, los cuales debe asegurarse que no se utilizaron en el aprendizaje.
       .col-lg-3.mb-lg-0.mb-3
         .tarjeta-icono.p-4.h-100
           .contenido
@@ -94,14 +94,14 @@
             .row.justify-content-center.mb-5
               .col-lg-5: img(src='@/assets/curso/temas/tema4/8.svg', alt='')
             h5 Selección de algoritmo
-            p De acuerdo con el requerimiento seleccione el algoritmo o algoritmos de clasificaciones que mejor le vayan dependiendo al tipo de problema a resolver.
+            p De acuerdo con el requerimiento, seleccione el algoritmo o algoritmos de clasificaciones que mejor le vayan dependiendo del tipo de problema a resolver.
     p.mb-5(data-aos='fade-right') Para realizar el entrenamiento seguir cada uno de los siguientes pasos:
     .row.justify-content-center.mb-5
       .col-lg-10
         div.p-5(style="background-color: #dbefed ")
           .titulo-pasos.mb-5
             h4.mb-0 Paso 1
-          p.mb-5(data-aos='fade-right') Como primer paso se procede a realizar a seleccionar los datos de entrenamiento y de prueba, para ellos haga usos de los siguientes comandos.
+          p.mb-5(data-aos='fade-right') Como primer paso se procede a seleccionar los datos de entrenamiento y de prueba, para ello haga usos de los siguientes comandos.
             br
             br
             |<code class="codigo">from sklearn.model_selection import GridSearchCV,train_test_split,StratifiedKFold,cross_val_score,learning_curve
@@ -122,7 +122,7 @@
             br
             |· #[b df['salida']:] etiquetas o clases de salida de la clasificación de las instancias.
             br
-            |· #[b test_size:] valor entre 0 y 1 que indica cual es el porcentaje de datos de prueba que será separados, para nuestro ejemplo serán del 20 por ciento es decir 0.2.
+            |· #[b test_size:] valor entre 0 y 1 que indica cuál es el porcentaje de datos de prueba que serán separados, para nuestro ejemplo será del 20 por ciento, es decir 0.2.
             br
             |· #[b random_state:] este parámetro se utiliza para realizar la mezcla de los datos aleatoriamente tal como se recomienda anteriormente, el número corresponde al número brde llamados  
             br           
@@ -264,7 +264,7 @@
         p Con los modelos evaluados se procede a realizar las predicciones, esta vez con entradas completamente nuevas. Con el aprendizaje realizado el modelo debería estar en la capacidad de clasificar los datos en correos electrónicos normales o maliciosos.
           br
           br
-          |Es importante aclarar que los nuevos datos que le pasen al modelo deben estar relacionados con la temática bajo la cual este modelo fue entrenado, ósea con mensajes de correos electrónicos.
+          |Es importante aclarar que los nuevos datos que le pasen al modelo deben estar relacionados con la temática bajo la cual este modelo fue entrenado, o sea con mensajes de correos electrónicos.
           br
           br
           |Para realizar las predicciones se tomará el modelo con mayor efectividad que arrojó la evaluación, que sería el que se entrenó con el algoritmo de clasificación Naive Bayes con un porcentaje del 98 por ciento.
@@ -277,7 +277,8 @@
         div.p-5(style="background-color: #dbefed ")
           .titulo-pasos.mb-5
             h4.mb-0 Paso 1
-          p.mb-5(data-aos='fade-right') Definir las entradas.
+          p.mb-5(data-aos='fade-right') #[b Definir las entradas.]
+            br
             br
             |<code class="codigo">Entrada1=['free mobile now']
             br
@@ -288,7 +289,7 @@
             |Entrada4=['call me text']</code>
           .titulo-pasos.mb-5
             h4.mb-0 Paso 2
-          p Crear una función para realizar las predicciones, de la siguiente manera
+          p #[em Crear una función para realizar las predicciones], de la siguiente manera
               br
               br
               |<code class="codigo">def clasificar(resultado):

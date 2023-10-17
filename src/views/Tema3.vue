@@ -46,15 +46,15 @@
             | #[code.codigo df=df.dropna()]
             br
             br
-            |Con este comando se eliminará todas las filas si en cualquiera de sus atributos o columnas encuentra un valor nulo. Recordemos que el total de registros era de 5572 una vez ejecutado el comando el resultado obtenido es el siguiente, con el comando shape, rápidamente se puede ver el total de registros y total de columnas.
+            |Con este comando se eliminarán todas las filas si en cualquiera de sus atributos o columnas encuentra un valor nulo. Recordemos que el total de registros era de 5572, una vez ejecutado el comando el resultado obtenido es el siguiente, con el comando #[em shape] rápidamente se puede ver el total de registros y el total de columnas.
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/3.png', alt='Captura de pantalla al eliminar columnas.')
           .titulo-pasos.mb-5
             h4.mb-0 Paso 3
-          p Para el ejemplo la variable objetivo es un texto de tipo categórico y es necesario que se realice su transformación para que puedan ser procesados por los algoritmos de clasificación que implementaremos.
+          p Para el ejemplo, la variable objetivo es un texto de tipo categórico y es necesario que se realice su transformación para que puedan ser procesados por los algoritmos de clasificación que implementaremos.
             br
             br
-            |La variable que se utilizará para realizar el aprendizaje corresponde a los mensajes y para realizar la adecuación de estos es la librería nltk
+            |La variable que se utilizará para realizar el aprendizaje corresponde a los mensajes y para realizar la adecuación de estos es la librería #[b nltk]
             br
             br
             |<code class="codigo">import nltk<br>nltk.download("punkt")<br>import warnings warnings.filterwarnings('ignore')<br>from wordcloud import WordCloud</code>
@@ -63,13 +63,13 @@
             |Como primer análisis de los mensajes se creará una nube de palabras que permitan identificar cuáles de ellas hacen parte de los mensajes normales y cuáles de los mensajes maliciosos.
             br
             br
-            |Primero se debe dos variables vacías de la siguiente manera.
+            |Primero se deben ver dos variables vacías de la siguiente manera.
             br
             br
             |<code class="codigo">palabrasNormales = '' <br> palabraMaliciosos = ''</code>
           .titulo-pasos.mb-5
             h4.mb-0 Paso 4
-          p Posteriormente se debe recorrer el dataframe en busca de los mensajes que coincidan con las etiquetas Malicioso, de la siguiente manera.
+          p Posteriormente se debe recorrer el #[em dataframe] en busca de los mensajes que coincidan con las etiquetas Malicioso, de la siguiente manera.
               br
               br
 
@@ -105,10 +105,10 @@
             |<code class="codigo">cloudMalicioso = WordCloud(width=500, height=300,<br>background_color='white').generate(palabrasMalicioso)</code>
             br
             br
-            |La variable la denominamos cloudMalicioso y con la librería WordCloud, generarmos la nube de palabras con la variable que previamente ya hemos usado para tal fin denominada palabrasMalicioso.
+            |La variable la denominamos cloudMalicioso y con la librería WordCloud, generamos la nube de palabras con la variable que previamente ya hemos usado para tal fin denominada: palabrasMalicioso
             br
             br
-            |Se procede con la grafica implementando los siguientes códigos.
+            |Se procede con la gráfica implementando los siguientes códigos.
             br
             br
             |<code class="codigo ">plt.figure( figsize=(10,8))<br>plt.imshow(cloudMalicioso)<br>plt.axis("off")<br>plt.tight_layout(pad=0)<br>plt.show()</code>
@@ -151,7 +151,9 @@
             br
             | Y la nube de palabras que se obtiene para este caso es la siguiente:
           .row.justify-content-center.mb-5
-            .col-lg-6: img(src='@/assets/curso/temas/tema3/5.png', alt='Captura de pantalla de una representación visual de nubes de palabras, como resultado del código ejecutado en este paso.')
+            .col-lg-6
+              img.mb-4(src='@/assets/curso/temas/tema3/5.png', alt='Captura de pantalla de una representación visual de nubes de palabras, como resultado del código ejecutado en este paso.')
+              p Se puede observar comparando las dos nubes de palabras que la que más se repite es la palabra free (gratis), en lo mensajes de correos marcados como maliciosos.
           .titulo-pasos.mb-5
             h4.mb-0 Paso 7
           P Ahora se deben convertir las etiquetas de salida: para que la máquina entienda los datos se procede con las transformaciones de las etiquetas normal y malicioso, la estrategia sería asignarle un número a cada una de estas de la siguiente manera:
@@ -178,10 +180,10 @@
             |El resultado se puede observar en la imagen
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/6.png', alt='Captura de pantalla en el que se evidencia la información de acuerdo a la etiqueta')
-          p Como se aprecia en la columna salida ya se visualiza la información correspondiente a 0 para la etiqueta Normal y 1 para la etiqueta.
+          p Como se aprecia en la columna salida ya se visualiza la información correspondiente a 0 para la etiqueta Normal y 1 para la etiqueta Malicioso.
           .titulo-pasos.mb-5
             h4.mb-0 Paso 8
-          p.mb-4 Ahora se debe eliminar la información que no aporta nada para el modelo de tal manera que se procede con la eliminación de los signos de puntuación, y de las palabras vacías, para ello se hace uso de la librería NTKL.
+          p.mb-4 Ahora se debe eliminar la información que no aporta nada para el modelo, de tal manera que se procede con la eliminación de los signos de puntuación, y de las palabras vacías, para ello se hace uso de la librería NTKL.
             br
             br
 
