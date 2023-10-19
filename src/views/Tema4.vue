@@ -71,28 +71,28 @@
         .tarjeta-icono.p-4.h-100
           .contenido
             .row.justify-content-center.mb-5
-              .col-lg-5: img(src='@/assets/curso/temas/tema4/5.svg', alt='')
+              .col-lg-5.col-3: img(src='@/assets/curso/temas/tema4/5.svg', alt='')
             h5 Selección de datos
             p Seleccionar los datos de manera aleatoria. No se deben escoger datos que sean continuos o de manera organizada. 
       .col-lg-3.mb-lg-0.mb-3
         .tarjeta-icono.p-4.h-100
           .contenido
             .row.justify-content-center.mb-5
-              .col-lg-5: img(src='@/assets/curso/temas/tema4/6.svg', alt='')
+              .col-lg-5.col-3: img(src='@/assets/curso/temas/tema4/6.svg', alt='')
             h5 Separar los datos
             p Reserve una muestra que por lo general equivale al veinte por ciento de los datos, los cuales debe asegurarse que no se utilizaron en el aprendizaje.
       .col-lg-3.mb-lg-0.mb-3
         .tarjeta-icono.p-4.h-100
           .contenido
             .row.justify-content-center.mb-5
-              .col-lg-5: img(src='@/assets/curso/temas/tema4/7.svg', alt='')
+              .col-lg-5.col-3: img(src='@/assets/curso/temas/tema4/7.svg', alt='')
             h5  Entrenar los datos
             p Seleccione el ochenta por ciento de los datos para realizar el entrenamiento de los datos.
       .col-lg-3.mb-lg-0.mb-3
         .tarjeta-icono.p-4.h-100
           .contenido
             .row.justify-content-center.mb-5
-              .col-lg-5: img(src='@/assets/curso/temas/tema4/8.svg', alt='')
+              .col-lg-5.col-3: img(src='@/assets/curso/temas/tema4/8.svg', alt='')
             h5 Selección de algoritmo
             p De acuerdo con el requerimiento, seleccione el algoritmo o algoritmos de clasificaciones que mejor le vayan dependiendo del tipo de problema a resolver.
     p.mb-5(data-aos='fade-right') Para realizar el entrenamiento seguir cada uno de los siguientes pasos:
@@ -289,7 +289,7 @@
             |Entrada4=['call me text']</code>
           .titulo-pasos.mb-5
             h4.mb-0 Paso 2
-          p #[em Crear una función para realizar las predicciones], de la siguiente manera
+          p #[b Crear una función para realizar las predicciones], de la siguiente manera
               br
               br
               |<code class="codigo">def clasificar(resultado):
@@ -304,16 +304,18 @@
               |La función espera por un resultado en caso de ser 1 lo clasifica como mensaje malicioso de lo contrario como mensaje normal.
           .titulo-pasos.mb-5
             h4.mb-0 Paso 3
-          p Vectorizar las entradas nuevas, así:
+          p #[b Vectorizar las entradas nuevas, así:]
             br
             br
             |#[code.codigo salida=vectorizer.transform(Entrada1)]
             br
             br
-            |Se deben transformar los datos y dejarlos de igual manera de cómo se entrenaron.
+            |Se deben transformar los datos y dejarlos de igual manera de como se entrenaron.
           .titulo-pasos.mb-5
             h4.mb-0 Paso 4
-          p Predecir y mostrar el resultado Realizar la predicción con la salida de los datos vectorizados y evaluar el resultado con la función de clasificación. resultado = NB.predict(salida) print('Mensaje: ',Entrada1) clasificar(resultado) El resultado para la primera entrada se aprecia en la imagen
+          p #[b Predecir y mostrar el resultado] 
+            br
+            | Realizar la predicción con la salida de los datos vectorizados y evaluar el resultado con la función de clasificación. resultado = NB.predict(salida) print('Mensaje: ',Entrada1) clasificar(resultado) El resultado para la primera entrada se aprecia en la imagen
           .row.justify-content-center.mb-5
             .col-lg-8: img(src='@/assets/curso/temas/tema4/16.png', alt='Captura de pantalla en la que se evidencia la predicción de entradas.')
           .titulo-pasos.mb-5
@@ -441,9 +443,40 @@
             |plt.show()</code>
           .titulo-pasos.mb-5
             h4.mb-0 Paso 5. Analizar gráfico
-          p El resultado que arroja la técnica de matriz de confusión se puede observar en la siguiente gráfica, en la cual existe un equilibrio ya que la veces en las que predijo correos normales como maliciosos es de 10 y en las que predijo correos maliciosos como maliciosos como normales fue de 8.
+          p El resultado que arroja la técnica de matriz de confusión se puede observar en la siguiente gráfica, en la cual existe un equilibrio ya que las veces en las que predijo correos normales como #[b maliciosos] es de 10 y en las que predijo correos #[b maliciosos] como maliciosos como normales fue de 8.
           .row.justify-content-center.mb-5
-            .col-lg-8: img(src='@/assets/curso/temas/tema4/19.png', alt='Gráfico para análisis de errores.')
+            .col-lg-7
+              img(src='@/assets/curso/temas/tema4/19.png', alt='Gráfico para análisis de errores.')
+              figcaption Matriz de confusión 
+          .titulo-pasos.mb-5
+            h4.mb-0 Paso 6. Otros cálculos
+          p Para realizar los demás cálculos utilice los siguientes comandos.
+          p #[b Para calcular la exhaustividad utilice:]
+            br
+            | <code class="codigo">from sklearn.metrics import recall_score 
+            br
+            |recall_score(y_correctas_NB, y_pred_NB, average=None) 
+            br
+            |Resultado: array([0.99183673, 0.92537313])</code>
+          p #[b Para Calcular la precisión utilice:]
+            br
+            | <code class="codigo">from sklearn.metrics import 
+            br
+            |precision_score 
+            br
+            |precision_score(y_correctas_NB, y_pred_NB, average=None)</code>
+          p #[b Resultado:]
+            br
+            | <code class="codigo">array([0.9898167 , 0.93939394])</code>
+          p #[b Para el cálculo de la métrica F1]
+            br
+            | <code class="codigo">from sklearn.metrics import f1_score 
+            br
+            |f1_score(y_correctas_NB, y_pred_NB, average=None)</code>
+          p #[b Resultado:]
+            br
+            | <code class="codigo">array([0.99082569, 0.93233083])</code>
+    p.mb-5(data-aos='fade-right') Se ha llegado al final de este espacio de formación en el que se ha diseñado un modelo de aprendizaje supervisado utilizando dos algoritmos de clasificación, Naive Bayes y el de regresión logística, aunque los dos dieron muy buenos resultados, el que más precisión obtuvo fue el modelo en el cual se utilizó Naive Bayes, con un 98 por ciento de aciertos, lo que lo convierte en un algoritmo ideal para este tipo de problemas donde las variables de salida son de tipo binario.
 
 
 

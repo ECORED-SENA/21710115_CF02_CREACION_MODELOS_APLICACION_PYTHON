@@ -18,7 +18,7 @@
     .row.justify-content-center.mb-5
       .col-lg-10
         div.p-5(style="background-color: #dbefed ")
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 1
           p.mb-5(data-aos='fade-right') Definir los atributos que harán parte del análisis: para este caso, aunque se tienen cuatro columnas el análisis se va a centrar en la columna mensaje como análisis para el entrenamiento y como variable objetivo o resultante será la columna salida.
             br
@@ -32,7 +32,7 @@
             |Este comando permite eliminar del #[code.codigo dataframe] las columnas que no se quieren analizar solamente dejando nuestra variable objetivo y las de análisis. Si se ejecuta el comando #[code.codigo df.head()], se debe obtener el resultado de las primeras 5 filas, pero ya solamente de las dos columnas seleccionadas:
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/2.png', alt='Captura de pantalla al eliminar columnas.')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 2
           p Eliminar valores nulos: en la exploración de los datos se encontró que en la columna mensaje existen registros nulos, de manera que para este caso se procede con la eliminación de estos registros, aunque esta no es la única decisión.
             br
@@ -49,9 +49,9 @@
             |Con este comando se eliminarán todas las filas si en cualquiera de sus atributos o columnas encuentra un valor nulo. Recordemos que el total de registros era de 5572, una vez ejecutado el comando el resultado obtenido es el siguiente, con el comando #[em shape] rápidamente se puede ver el total de registros y el total de columnas.
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/3.png', alt='Captura de pantalla al eliminar columnas.')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 3
-          p Para el ejemplo, la variable objetivo es un texto de tipo categórico y es necesario que se realice su transformación para que puedan ser procesados por los algoritmos de clasificación que implementaremos.
+          p.mb-5 Para el ejemplo, la variable objetivo es un texto de tipo categórico y es necesario que se realice su transformación para que puedan ser procesados por los algoritmos de clasificación que implementaremos.
             br
             br
             |La variable que se utilizará para realizar el aprendizaje corresponde a los mensajes y para realizar la adecuación de estos es la librería #[b nltk]
@@ -67,9 +67,9 @@
             br
             br
             |<code class="codigo">palabrasNormales = '' <br> palabraMaliciosos = ''</code>
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 4
-          p Posteriormente se debe recorrer el #[em dataframe] en busca de los mensajes que coincidan con las etiquetas Malicioso, de la siguiente manera.
+          p.mb-5 Posteriormente se debe recorrer el #[em dataframe] en busca de los mensajes que coincidan con las etiquetas Malicioso, de la siguiente manera.
               br
               br
 
@@ -94,9 +94,9 @@
               br
               br 
               | #[code.codigo for palabras in tokens:]   recorre cada una de las palabras para ser almacenadas en una sola cadena de texto.
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 5
-          p El objetivo de implementar dicho código es tomar todos los mensajes que coincidan con la etiqueta de salida malicioso, convertirlas a minúsculas para estandarizar todos los textos, luego separar cada palabra en una sola cadena de texto, que servirá para analizar cuál de las palabras tienen mayor representación.
+          p.mb-5 El objetivo de implementar dicho código es tomar todos los mensajes que coincidan con la etiqueta de salida malicioso, convertirlas a minúsculas para estandarizar todos los textos, luego separar cada palabra en una sola cadena de texto, que servirá para analizar cuál de las palabras tienen mayor representación.
             br
             br
             |Una vez con todas las palabras en una sola cadena de texto se procede a generar la nube de palabras.
@@ -117,7 +117,7 @@
             |El resultado de ejecutar las siguientes líneas de código será la representación de nube de palabras como se aprecia en la imagen.
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/4.png', alt='Captura de pantalla de una representación visual de nubes de palabras, como resultado del código ejecutado.')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 6
           p Se realiza el mismo procedimiento, pero esta vez detectando los mensajes de los correos que están marcados como Normal, el código quedaría de la siguiente manera.
             br
@@ -154,7 +154,7 @@
             .col-lg-6
               img.mb-4(src='@/assets/curso/temas/tema3/5.png', alt='Captura de pantalla de una representación visual de nubes de palabras, como resultado del código ejecutado en este paso.')
               p Se puede observar comparando las dos nubes de palabras que la que más se repite es la palabra free (gratis), en lo mensajes de correos marcados como maliciosos.
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 7
           P Ahora se deben convertir las etiquetas de salida: para que la máquina entienda los datos se procede con las transformaciones de las etiquetas normal y malicioso, la estrategia sería asignarle un número a cada una de estas de la siguiente manera:
           .row.justify-content-center.mb-5
@@ -180,8 +180,8 @@
             |El resultado se puede observar en la imagen
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/6.png', alt='Captura de pantalla en el que se evidencia la información de acuerdo a la etiqueta')
-          p Como se aprecia en la columna salida ya se visualiza la información correspondiente a 0 para la etiqueta Normal y 1 para la etiqueta Malicioso.
-          .titulo-pasos.mb-5
+          p.mb-5 Como se aprecia en la columna salida ya se visualiza la información correspondiente a 0 para la etiqueta Normal y 1 para la etiqueta Malicioso.
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 8
           p.mb-4 Ahora se debe eliminar la información que no aporta nada para el modelo, de tal manera que se procede con la eliminación de los signos de puntuación, y de las palabras vacías, para ello se hace uso de la librería NTKL.
             br

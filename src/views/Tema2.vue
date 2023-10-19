@@ -41,9 +41,9 @@
                 br
                 | <code class="codigo "> import pandas as pd <br>import numpy as np <br>import matplotlib.pyplot as plt</code>
             .col-lg-6: img(src='@/assets/curso/temas/tema2/3.png', alt='')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 4
-          p Se debe realizar la lectura de los archivos para el análisis: para el ejemplo trabajado el archivo en el cual están almacenados los datos es tipo CSV, y el comando necesario para realizar la lectura es la siguiente.
+          p.mb-5 Se debe realizar la lectura de los archivos para el análisis: para el ejemplo trabajado el archivo en el cual están almacenados los datos es tipo CSV, y el comando necesario para realizar la lectura es la siguiente.
             br
             br
             <code class="codigo"> df=pd.read_csv('correosmaliciosos.csv') </code>
@@ -56,9 +56,9 @@
             | #[code.codigo correosmaliciosos.csv:]   archivo con los datos en formato CSV y ubicado en la misma carpeta del Notebook, en caso de estar ubicado en una ruta diferente deberá especificar la ruta completa, por ejemplo: 'C:/proyecto/correosmalicisos.csv', lo que indica que su ubicación esta en la carpeta proyecto de la unidad local C: 
             br
             | #[code.codigo df=] variable que almacena la información leída del archivo y que de denomina dataframe, lo que significa que se tienen los datos en dos dimensiones determinados por filas y columnas, o instancias y atributos.
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 5 
-          p Una vez importados los datos, se procede con las primeras visualizaciones; para ello, podemos hacer usos de los siguientes comandos.
+          p.mb-5 Una vez importados los datos, se procede con las primeras visualizaciones; para ello, podemos hacer usos de los siguientes comandos.
               br
               |#[code.codigo df] 
               br
@@ -72,34 +72,34 @@
           p Utilice el comando  #[code.codigo df.head()],  para visualizar los primeros 5 registros del conjunto de datos.
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema2/5.png', alt='Comandos para visualizar los primeros cinco registros del total.')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 6
           p Entendiendo cada uno de los datos presentes en la colección de datos, para profundizar más sobre cada uno de los datos el comando que podemos utilizar es el siguiente, #[code.codigo df.info()]. Con este comando podemos determinar el tipo de dato, la totalidad de datos por cada atributo, de igual manera total genera de registros y columnas y totalizado por cada tipo de dato.
           .row.justify-content-center.mb-3
             .col-lg-6: img(src='@/assets/curso/temas/tema2/6.png', alt='Captura de pantalla en la que se detallan los datos.')
-          p Con el resultado se puede decir que tenemos una totalidad de 5572 registros y 5 columnas o atributos. Una columna de tipo numérica int64 denominada Unnamed: 0, 4 columnas de tipo object, denominadas fecha, salida, ciudad, y mensaje lo que quiere decir que son datos categóricos.
-          .titulo-pasos.mb-5
+          p.mb-5 Con el resultado se puede decir que tenemos una totalidad de 5572 registros y 5 columnas o atributos. Una columna de tipo numérica int64 denominada Unnamed: 0, 4 columnas de tipo object, denominadas fecha, salida, ciudad, y mensaje lo que quiere decir que son datos categóricos.
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 7
           p #[b Determinar datos nulos:] para realizar una revisión de todas las columnas determinando en cuales existe presencia de valores nulos o vacíos, utilice el comando,  #[code.codigo df.isnull().sum(), la función isnull()], ayuda a determinar cuántos valores son vacíos y con la función  #[code.codigo sum()], se realiza la suma de todos los valores nulos por cada columna, el resultado aplicado a nuestros datos es el siguiente.
           .row.justify-content-center.mb-3
             .col-lg-6: img(src='@/assets/curso/temas/tema2/7.png', alt='Captura de pantalla para analizar los datos nulos.')
-          p El resultado nos muestra que en la columna mensaje hay una presencia de cuatro valores vacíos.
-          .titulo-pasos.mb-5
+          p.mb-5 El resultado nos muestra que en la columna mensaje hay una presencia de cuatro valores vacíos.
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 8 
           p Análisis individual, veamos el contenido de las columnas que hacen parte de la colección de datos, por ejemplo, se realizan agrupaciones para determinar la participación porcentual y se analiza el contenido dentro de la columna salida. Con el siguiente comando se puede establecer los tipos de datos que están presentes en esa columna y cuánto es el total por cada característica. 
             br
             br
             |#[code.codigo df['salida'].value_counts()]
-          .row.justify-content-center.mb-3
+          .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema2/8.png', alt='Comando que analiza cada característica de la columna salida.')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 9 
           p Análisis gráfico, ahora veamos con el apoyo de los gráficos la participación porcentual de cada uno de valores, ejecutando el siguiente comando.
           p <code class="codigo "> import matplotlib.pyplot as pl <br><br> etiquetas = 'Normal', 'Malicioso' rebanada = (0, 0.1) <br><br>fig1, ax1 = plt.subplots() ax1.pie(df['salida'].value_counts(), explode=rebanada, labels=etiquetas, autopct='%1.1f%%', shadow=True, startangle=90) ax1.axis('equal') <br><br>plt.show()  </code>
           p El resultado que se debe obtener es el siguiente:
-          .row.justify-content-center.mb-3
+          .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema2/9.png', alt='Participación porcentual de cada etiqueta de la columna salida.')
-          .titulo-pasos.mb-5
+          .titulo-pasos.mb-3
             h4.mb-0 Paso 10
           p Análisis de resultados, se puede decir que con la exploración realizada se encontró la siguiente información:
           .row.justify-content-center.mb-5

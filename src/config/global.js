@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: '<em>Machine Learning</em> con Python',
     descripcionCurso:
-      'Este componente formativo está enfocado en reconocer todos los elementos necesarios para aplicar el modelo Machine Learning a través de un ejemplo enfocado en la selección y utilización de los diferentes algoritmos de clasificación que se encuentran dentro de la categoría del aprendizaje supervisado',
+      'Este componente formativo está enfocado en reconocer todos los elementos necesarios para aplicar el modelo Machine Learning a través de un ejemplo enfocado en la selección y utilización de los diferentes algoritmos de clasificación que se encuentran dentro de la categoría del aprendizaje supervisado.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -159,7 +159,7 @@ export default {
     {
       termino: 'Algoritmos de clasificación',
       significado:
-        'hacen parte del aprendizaje supervisado y se caracterizan por que los modelos se entrenan con las instancias y sus respectivas clasificaciones.',
+        'hacen parte del aprendizaje supervisado y se caracterizan porque los modelos se entrenan con las instancias y sus respectivas clasificaciones.',
     },
     {
       termino: 'Naive Bayes',
@@ -167,7 +167,7 @@ export default {
         'algoritmo de clasificación utilizado en problemas donde las salidas son binarias.',
     },
     {
-      termino: 'Matriz de confusió',
+      termino: 'Matriz de confusión',
       significado:
         'es una métrica para establecer el nivel de error, precisión y otras medidas en los modelos de <em>Machine Learning.</em>',
     },

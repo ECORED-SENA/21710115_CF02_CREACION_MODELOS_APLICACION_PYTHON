@@ -43,7 +43,7 @@
     p.mb-5(data-aos='fade-right') Entre los tipos de librerías se encuentran:
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee" data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4
-        .col-lg-1.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/2.svg', alt='')
+        .col-lg-1.col-2.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/2.svg', alt='')
         .col-lg-11
           ul.lista-ul.mb-1
             li.d-flex.mb-0
@@ -107,7 +107,7 @@
       .col-lg-5.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/3.png', alt='')
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4
-        .col-lg-1.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/4.png', alt='')
+        .col-lg-1.col-2.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/4.png', alt='')
         .col-lg-11
           ul.lista-ul.mb-1
             li.d-flex.mb-0
@@ -168,7 +168,7 @@
           p.mb-0 Con esta robusta librería se pueden realizar todo tipo de operaciones basadas en arreglos unidimensionales y multidimensionales.
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4
-        .col-lg-1.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/5.svg', alt='')
+        .col-lg-1.col-2.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/5.svg', alt='')
         .col-lg-11
           p #[b ● Matplotlib:] es una biblioteca muy útil para realizar gráficos estáticos, animados e interactivos. Los gráficos son muy útiles para hacer análisis de información, permitiendo agrupar grandes volúmenes de datos en representaciones visuales que permiten una mejor comprensión.
             br
@@ -339,7 +339,7 @@
     p.mb-5(data-aos='fade-right') Las principales ventajas y desventajas de cada una de las librerías se presentan a continuación.
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-1.col-6.mb-lg-0.mb-3
+        .col-lg-1.col-2.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/2.svg', alt='').mb-2
           h4 Panda
         .col-lg-12
@@ -370,7 +370,7 @@
         
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-1.col-6.mb-lg-0.mb-3
+        .col-lg-1.col-2.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/4.png', alt='').mb-2
           h4 Numpy
         .col-lg-12
@@ -416,7 +416,7 @@
         
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-1.col-6.mb-lg-0.mb-3
+        .col-lg-1.col-2.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/5.svg', alt='').mb-2
           h4 Matplotlib
         .col-lg-12
