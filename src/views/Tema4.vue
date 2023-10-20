@@ -8,10 +8,10 @@
       h1 Crear el modelo
     .row.justify-content-center.mb-5
       .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
-        p Después de la exploración y el preprocesamiento, se continúa con la construcción del modelo, como se puede ver la variable con la que aprenderá el modelo se basa en texto que ya se ha divido en palabras y que se debe empezar a cuantificar para poder pasar la información para que el modelo lo pueda entender.
+        p Después de la exploración y el preprocesamiento, se continúa con la construcción del modelo, como se puede ver, la variable con la que aprenderá el modelo se basa en texto que ya se ha divido en palabras y que se debe empezar a cuantificar para poder pasar la información para que el modelo lo pueda entender.
           br
           br
-          |Como se ha venido desarrollando todas las unidades se realizará una serie de pasos que permitan en este caso la construcción de un modelo, para conocerlos revise con atención el recurso propuesto:
+          |Como se han venido desarrollando todas las unidades se realizará una serie de pasos que permitan en este caso la construcción de un modelo, para conocerlos revise con atención el recurso propuesto:
       .col-lg-4.col-6: img(src='@/assets/curso/temas/tema4/1.png', alt='')
     .mn.p-5(style="background-color: #dbefed ")
       .tarjeta.bg-white.p-5
