@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: '<em>Machine Learning</em> con Python',
     descripcionCurso:
-      'Este componente formativo está enfocado en reconocer todos los elementos necesarios para aplicar el modelo Machine Learning a través de un ejemplo enfocado en la selección y utilización de los diferentes algoritmos de clasificación que se encuentran dentro de la categoría del aprendizaje supervisado.',
+      'Este componente formativo está enfocado en reconocer todos los elementos necesarios para aplicar el modelo <em>Machine Learning</em> a través de un ejemplo enfocado en la selección y utilización de los diferentes algoritmos de clasificación que se encuentran dentro de la categoría del aprendizaje supervisado.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [

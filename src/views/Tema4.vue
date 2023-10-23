@@ -44,7 +44,7 @@
             .col-lg-6.mb-lg-0.mb-3
               h4(style="color: #8054F8") Paso 2 Conversión de palabras a vectores
 
-              p Lo que se quiere con este procedimiento es realizar el recuento de los tokens o palabras que se obtienen de los mensajes de correo electrónico, el objetivo es crear una matriz que realice un recuento por cada una de las palabras y las construya como un atributo. Para obtener este resultado debe ejecutar los siguientes comandos.
+              p Lo que se quiere con este procedimiento es realizar el recuento de los #[em tokens] o palabras que se obtienen de los mensajes de correo electrónico, el objetivo es crear una matriz que realice un recuento por cada una de las palabras y las construya como un atributo. Para obtener este resultado debe ejecutar los siguientes comandos.
                 br
                 br
                 |<code class="codigo">from sklearn.feature_extraction.text import TfidfVectorizer
@@ -443,7 +443,7 @@
             |plt.show()</code>
           .titulo-pasos.mb-5
             h4.mb-0 Paso 5. Analizar gráfico
-          p El resultado que arroja la técnica de matriz de confusión se puede observar en la siguiente gráfica, en la cual existe un equilibrio ya que las veces en las que predijo correos normales como #[b maliciosos] es de 10 y en las que predijo correos #[b maliciosos] como maliciosos como normales fue de 8.
+          p El resultado que arroja la técnica de matriz de confusión se puede observar en la siguiente gráfica, en la cual existe un equilibrio, ya que las veces en las que predijo correos normales como #[b maliciosos] es de 10, y en las que predijo correos #[b maliciosos] como normales de 8.
           .row.justify-content-center.mb-5
             .col-lg-7
               img(src='@/assets/curso/temas/tema4/19.png', alt='Gráfico para análisis de errores.')

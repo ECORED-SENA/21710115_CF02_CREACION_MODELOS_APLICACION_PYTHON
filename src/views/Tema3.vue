@@ -20,7 +20,7 @@
         div.p-5(style="background-color: #dbefed ")
           .titulo-pasos.mb-3
             h4.mb-0 Paso 1
-          p.mb-5(data-aos='fade-right') Definir los atributos que harán parte del análisis: para este caso, aunque se tienen cuatro columnas el análisis se va a centrar en la columna mensaje como análisis para el entrenamiento y como variable objetivo o resultante será la columna salida.
+          p.mb-5(data-aos='fade-right') Definir los atributos que harán parte del análisis: para este caso, aunque se tienen cuatro columnas, el análisis se va a centrar en la columna mensaje como análisis para el entrenamiento, y como variable objetivo o resultante será la columna salida.
             br
             br
             |Lo que quiere decir que solamente se debe dejar en la colección de datos esas dos columnas, para realizar este proceso se debe ejecutar el siguiente comando.
@@ -153,7 +153,7 @@
           .row.justify-content-center.mb-5
             .col-lg-6
               img.mb-4(src='@/assets/curso/temas/tema3/5.png', alt='Captura de pantalla de una representación visual de nubes de palabras, como resultado del código ejecutado en este paso.')
-              p Se puede observar comparando las dos nubes de palabras que la que más se repite es la palabra free (gratis), en lo mensajes de correos marcados como maliciosos.
+              p Se puede observar comparando las dos nubes de palabras que la que más se repite es la palabra #[em free] (gratis), en los mensajes de correos marcados como maliciosos.
           .titulo-pasos.mb-3
             h4.mb-0 Paso 7
           P Ahora se deben convertir las etiquetas de salida: para que la máquina entienda los datos se procede con las transformaciones de las etiquetas normal y malicioso, la estrategia sería asignarle un número a cada una de estas de la siguiente manera:

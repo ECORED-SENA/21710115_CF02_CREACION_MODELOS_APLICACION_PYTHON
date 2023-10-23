@@ -103,7 +103,7 @@
               th(style='border: 1px solid #8054f8') 4 ham
               td(style='border: 1px solid #8054f8') Nah I don't think he goes to usf, he lives aro...
         .tarjeta.borde-izquierdo.p-4(style="background-color: #d3c3fd ")
-          p.ms-3.mb-0 Este comando permitirá visualizar una muestra de los datos; la librería panda es muy útil para todo el manejo y manipulación de datos, ya que con muy pocas líneas de código se puede realizar procedimientos complejos
+          p.ms-3.mb-0 Este comando permitirá visualizar una muestra de los datos; la librería panda es muy útil para todo el manejo y manipulación de datos, ya que con muy pocas líneas de código se puede realizar procedimientos complejos.
       .col-lg-5.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/3.png', alt='')
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4

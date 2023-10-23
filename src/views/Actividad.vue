@@ -28,7 +28,7 @@
       .col-12.col-md-8.col-lg-9
         .titulo-segundo
           h2 Aclarando conceptos
-        p.mb-4 Identificar los principales elementos para la aplicación del modelo #[em Machine Learning] en la solución de problemas tomando como base los objetivos de las organizaciones
+        p.mb-4 Identificar los principales elementos para la aplicación del modelo #[em Machine Learning] en la solución de problemas tomando como base los objetivos de las organizaciones.
         .tarjeta.actividad.p-3
           .row.justify-content-around.align-items-center            
             .col-sm.mb-3.mb-sm-0

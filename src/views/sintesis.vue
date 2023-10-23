@@ -2,7 +2,7 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p.mb-5 Es innegable que las empresas deben buscar estrategias para organizar cada uno de sus procesos, y esto implica el implementar modelos que les permitan organizar, clasificar y hacer usos de los datos para tomar decisiones adecuadas que lleven a cumplir los objetivos establecidos por la organización. Este espacio de formación está destinado a conocer, mediante ejemplos específicos, los pasos para realizar el análisis de información utilizando Anaconda, sus diferentes librerías y el modelo Machine Learning con Python.
+    p.mb-5 Es innegable que las empresas deben buscar estrategias para organizar cada uno de sus procesos, y esto implica el implementar modelos que les permitan organizar, clasificar y hacer usos de los datos para tomar decisiones adecuadas que lleven a cumplir los objetivos establecidos por la organización. Este espacio de formación está destinado a conocer, mediante ejemplos específicos, los pasos para realizar el análisis de información utilizando Anaconda, sus diferentes librerías y el modelo #[em Machine Learning] con Python.
       br
       br
       |Una breve revisión de los temas vistos, se encuentran en el siguiente esquema:
