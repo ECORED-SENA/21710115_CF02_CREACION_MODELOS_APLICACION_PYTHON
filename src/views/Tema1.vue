@@ -127,7 +127,7 @@
           br
           |Normalmente una lista de Python se define de la siguiente manera:
           br
-          |#[code.codigo listaPython=[2,4,6,8,10]]
+          |<code class="codigo"> listaPython=[2,4,6,8,10] </code>
           br
           br
           |Para realizar la conversión a un array, se debe envolver dentro del método array() de la siguiente manera.
@@ -137,12 +137,12 @@
           br
           | El resultado que se obtiene es el siguiente.
           br
-          |#[code.codigo array([ 2, 4, 6, 8, 10])]
+          |<code class="codigo"> array([ 2, 4, 6, 8, 10]) </code>
           br
           br
           | Los dos tipos de arreglos que se pueden encontrar en NumPy son vectores y matrices; en el           anterior ejemplo, se veía la conversión de una lista normal de Python a un vector en NumPy y un           ejemplo de matrices se puede ver a continuación:
           br
-          | <code class="codigo "> matriz = [[1, 2, 3],[4, 5, 6],[7, 8, 9]] #[br] np.array(matriz)</code>
+          | <code class="codigo "> matriz = [[1, 2, 3],[4, 5, 6],[7, 8, 9]] <br> np.array(matriz)</code>
           br
           br
           |El resultado es una matriz de una dimensión determinada por tres filas y tres columnas y se ve de la siguiente manera.

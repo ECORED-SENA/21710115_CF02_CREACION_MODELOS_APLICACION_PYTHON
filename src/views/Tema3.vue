@@ -29,7 +29,7 @@
             | <code class="codigo"> df=df.drop(['Unnamed: 0', 'fecha', 'ciudad'], axis=1) </code>
             br
             br
-            |Este comando permite eliminar del #[em dataframe] las columnas que no se quieren analizar solamente dejando nuestra variable objetivo y las de análisis. Si se ejecuta el comando #[code.codigo df.head()], se debe obtener el resultado de las primeras 5 filas, pero ya solamente de las dos columnas seleccionadas:
+            |Este comando permite eliminar del #[em dataframe] las columnas que no se quieren analizar, solamente dejando nuestra variable objetivo y las de análisis. Si se ejecuta el comando #[code.codigo df.head()], se debe obtener el resultado de las primeras 5 filas, pero ya solamente de las dos columnas seleccionadas:
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/2.png', alt='Captura de pantalla al eliminar columnas.')
           .titulo-pasos.mb-3

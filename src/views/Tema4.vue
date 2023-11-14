@@ -54,14 +54,14 @@
                 br
                 |El resultado que se obtiene lo puede observa en la imagen.
             .col-lg-6
-              img(src='@/assets/curso/temas/tema4/3.png', alt='').mb-4
+              img(src='@/assets/curso/temas/tema4/3.png', alt='Captura de pantalla en la que se muestra el resultado de un dataframe independiente.').mb-4
               p Convertir cantidades de palabras.
           .row.justify-content-center.mb-5
             .col-lg-6.mb-lg-0.mb-3
               h4(style="color: #8054F8") Paso 3 Objetivo encontrado
               p Ya se ha logrado cuantificar cada una de las palabras del texto de tal manera que estos serán los datos con los que entrenaremos el modelo. Lo que resta es almacenar esta variable a una que servirá para el siguiente paso del entrenamiento, para el ejemplo la denominaremos #[B instancias.]
             .col-lg-6
-              img(src='@/assets/curso/temas/tema4/4.svg', alt='').mb-4
+              img(src='@/assets/curso/temas/tema4/4.svg', alt='Captura de pantalla en la que se muestra el resultado de un dataframe independiente.').mb-4
     Separador
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.1 Entrenamiento
