@@ -266,7 +266,7 @@ export default {
         },
         {
           nombre: 'Jhon Jairo Rodríguez Pérez',
-          cargo: 'Corrector de estilo',
+          cargo: 'Corrector de Estilo',
           centro: 'Regional Distrito Capital - Centro de Diseño y Metrología',
         },
         {
@@ -300,7 +300,7 @@ export default {
         },
         {
           nombre: 'Daniela Muñoz Bedoya',
-          cargo: 'Animador y Producción audiovisual',
+          cargo: 'Animador y Producción Audiovisual',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },
@@ -329,7 +329,7 @@ export default {
         },
         {
           nombre: 'Daniel Ricardo Mutis Gómez',
-          cargo: 'Evaluador para contenidos inclusivos y accesibles',
+          cargo: 'Evaluador para Contenidos Inclusivos y Accesibles',
           centro:
             'Regional Santander - Centro Industrial del Diseño y la Manufactura',
         },

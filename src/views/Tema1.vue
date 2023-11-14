@@ -43,16 +43,16 @@
     p.mb-5(data-aos='fade-right') Entre los tipos de librerías se encuentran:
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee" data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4
-        .col-lg-1.col-2.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/2.svg', alt='')
+        .col-lg-1.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/2.svg', alt='')
         .col-lg-11
           ul.lista-ul.mb-1
             li.d-flex.mb-0
               i.fas.fa-circle.fa-xs
               p #[b Pandas]: es una librería de Python especializada en el manejo y análisis de estructuras de datos; dentro de sus principales usos se puede encontrar:
           ul.lista-ul--color
-            li.mb-0
+            li.mb-0.d-flex
               i.fas.fa-angle-right
-              | Define nuevas estructuras de datos basadas en los arrays de la librería NumPy pero con nuevas funcionalidades.
+              p.mb-0 Define nuevas estructuras de datos basadas en los #[em arrays] de la librería NumPy pero con nuevas funcionalidades.
 
             li.mb-0
               i.fas.fa-angle-right
@@ -115,7 +115,7 @@
               p #[B Numpy:] es una librería muy importante cuando se trabaja con proyectos de ciencia de datos en Python. Se especializa en los cálculos numéricos y analítica de datos, específicamente cuando se trata de grandes volúmenes de información.
                 br
                 br
-                |Esta librería trae incorporada una nueva clase de objetos que se denominan arrays que se utilizan para representar colecciones de datos que son de un mismo tipo en varias dimensiones y funciones que son bastante eficientes para realizar su manipulación.
+                |Esta librería trae incorporada una nueva clase de objetos que se denominan #[em arrays] que se utilizan para representar colecciones de datos que son de un mismo tipo en varias dimensiones y funciones que son bastante eficientes para realizar su manipulación.
       div(style="background-color: #d3c3fd").p-4
         p.mb-0 La librería Numpy es hasta 50 veces más rápida comparada con las listas que vienen ya predeterminadas con el lenguaje Python. Esto hace que sean muy buena opción cuando se trata del procesamiento de vectores y matrices que son de gran dimensión.
     .row.justify-content-center.mb-5
@@ -168,7 +168,7 @@
           p.mb-0 Con esta robusta librería se pueden realizar todo tipo de operaciones basadas en arreglos unidimensionales y multidimensionales.
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.justify-content-center.mb-1.p-4
-        .col-lg-1.col-2.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/5.svg', alt='')
+        .col-lg-1.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/tema1/5.svg', alt='')
         .col-lg-11
           p #[b ● Matplotlib:] es una biblioteca muy útil para realizar gráficos estáticos, animados e interactivos. Los gráficos son muy útiles para hacer análisis de información, permitiendo agrupar grandes volúmenes de datos en representaciones visuales que permiten una mejor comprensión.
             br
@@ -192,7 +192,7 @@
           p(numero="B" titulo="Segundo") Defina las etiquetas que representan las salidas de los datos, para este ejemplo serán productos que representan frutas. 
             br
             |#[code.codigo etiquetas = 'Manzanas', 'Peras', 'Mangos', 'Fresas']
-          p(numero="C" titulo="Tercero") Establezca los valores que representan cada uno de los productos definidos. valores =  #[code.codigo  [25, 15, 45, 5]]
+          p(numero="C" titulo="Tercero") Establezca los valores que representan cada uno de los productos definidos. valores =  <code class="codigo">  [25, 15, 45, 5] </code>
           p(numero="D" titulo="Cuarto") Si quiere resaltar una rebanada de la torta, por ejemplo las peras, se debe establecer una variable de la siguiente manera.
             br
             |#[code.codigo rebanada=(0,0.1,0,0)]
@@ -203,7 +203,7 @@
             p Finalmente, el resultado que se obtiene es el siguiente:
             .row.justify-content-center.mb-5
               .col-lg-10
-                img(src='@/assets/curso/temas/tema1/7.png', alt='')
+                img(src='@/assets/curso/temas/tema1/7.png', alt=' Participación porcentual de cada etiqueta de la columna salida.')
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-10
@@ -280,7 +280,7 @@
           br
           br
           |Se quiere realizar un modelo para realizar la predicción dependiendo a nuevas entradas, si se aprueban o reprueban créditos. Para realizar este ejemplo es necesario realizar algunos pasos que se podrán conocer revisando el recurso propuesto:
-      .col-lg-4.col-4: img(src='@/assets/curso/temas/tema1/10.png', alt='')
+      .col-lg-4.col-9: img(src='@/assets/curso/temas/tema1/10.png', alt='')
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         LineaTiempoD.color-primario
@@ -341,7 +341,7 @@
       .row.mb-1.p-4
         .col-lg-1.col-2.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/2.svg', alt='').mb-2
-          h4 Panda
+          h4 Pandas
         .col-lg-12
           h5 Ventajas
           ul.lista-ul.mb-1
@@ -424,7 +424,7 @@
           ul.lista-ul.mb-1
             li.d-flex.mb-0
               i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
-              p.mb-0 Soporta shells de Python y IPython, scripts de Python, Jupyter Notebook, servidores de aplicaciones web y muchos kits de herramientas de interfaz gráfica.
+              p.mb-0 Soporta #[em shells] de Python y IPython, scripts de Python, Jupyter Notebook, servidores de aplicaciones web y muchos kits de herramientas de interfaz gráfica.
             li.d-flex.mb-0
               i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
               p.mb-0 Opcionalmente, ofrece una interfaz parecida a la de MATLAB para realizar trazados sencillos.
@@ -437,7 +437,7 @@
 
             li.d-flex.mb-0
               i.fas.fa-angle-right.fa-xs(style="color: #855ef7")
-              p.mb-0 Compatible con varios backends de gráficos y sistemas operativos.
+              p.mb-0 Compatible con varios #[em backends] de gráficos y sistemas operativos.
       div(style="background-color: #d3c3fd").p-4
         h5 Desventajas
         ul.lista-ul.mb-1

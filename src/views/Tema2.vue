@@ -55,7 +55,7 @@
             br
             | #[code.codigo correosmaliciosos.csv:]   archivo con los datos en formato CSV y ubicado en la misma carpeta del Notebook, en caso de estar ubicado en una ruta diferente deberá especificar la ruta completa, por ejemplo: 'C:/proyecto/correosmalicisos.csv', lo que indica que su ubicación esta en la carpeta proyecto de la unidad local C: 
             br
-            | #[code.codigo df=] variable que almacena la información leída del archivo y que de denomina dataframe, lo que significa que se tienen los datos en dos dimensiones determinados por filas y columnas, o instancias y atributos.
+            | #[code.codigo df=] variable que almacena la información leída del archivo y que de denomina #[em dataframe], lo que significa que se tienen los datos en dos dimensiones determinados por filas y columnas, o instancias y atributos.
           .titulo-pasos.mb-3
             h4.mb-0 Paso 5 
           p.mb-5 Una vez importados los datos, se procede con las primeras visualizaciones; para ello, podemos hacer usos de los siguientes comandos.
@@ -63,7 +63,7 @@
               |#[code.codigo df] 
               br
               br
-              |Solamente usando la variable o dataframe en el cual se guardaron los datos podemos visualizar los cinco primeros y cinco últimos registros de la colección de datos.
+              |Solamente usando la variable o #[em dataframe] en el cual se guardaron los datos podemos visualizar los cinco primeros y cinco últimos registros de la colección de datos.
               br
               br
               |Utilice el comando #[code.codigo df.head()], para visualizar los primeros 5 registros del conjunto de datos. En caso de requerir visualizar muchos más datos, coloque dentro del comando #[code.codigo df.head()], el número de registros que quiera ver, por ejemplo, si necesita visualizar los 10 primeros use el comando de la siguiente manera #[code.codigo df.head(10)].
@@ -77,7 +77,7 @@
           p Entendiendo cada uno de los datos presentes en la colección de datos, para profundizar más sobre cada uno de los datos el comando que podemos utilizar es el siguiente, #[code.codigo df.info()]. Con este comando podemos determinar el tipo de dato, la totalidad de datos por cada atributo, de igual manera total genera de registros y columnas y totalizado por cada tipo de dato.
           .row.justify-content-center.mb-3
             .col-lg-6: img(src='@/assets/curso/temas/tema2/6.png', alt='Captura de pantalla en la que se detallan los datos.')
-          p.mb-5 Con el resultado se puede decir que tenemos una totalidad de 5572 registros y 5 columnas o atributos. Una columna de tipo numérica int64 denominada Unnamed: 0, 4 columnas de tipo object, denominadas fecha, salida, ciudad, y mensaje lo que quiere decir que son datos categóricos.
+          p.mb-5 Con el resultado se puede decir que tenemos una totalidad de 5572 registros y 5 columnas o atributos. Una columna de tipo numérica int64 denominada #[em Unnamed]: 0, 4 columnas de tipo #[em object], denominadas fecha, salida, ciudad, y mensaje lo que quiere decir que son datos categóricos.
           .titulo-pasos.mb-3
             h4.mb-0 Paso 7
           p #[b Determinar datos nulos:] para realizar una revisión de todas las columnas determinando en cuales existe presencia de valores nulos o vacíos, utilice el comando,  #[code.codigo df.isnull().sum(), la función isnull()], ayuda a determinar cuántos valores son vacíos y con la función  #[code.codigo sum()], se realiza la suma de todos los valores nulos por cada columna, el resultado aplicado a nuestros datos es el siguiente.

@@ -8,7 +8,7 @@
       h1 Crear el modelo
     .row.justify-content-center.mb-5
       .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
-        p Después de la exploración y el preprocesamiento, se continúa con la construcción del modelo, como se puede ver, la variable con la que aprenderá el modelo se basa en texto que ya se ha divido en palabras y que se debe empezar a cuantificar para poder pasar la información para que el modelo lo pueda entender.
+        p Después de la exploración y el preprocesamiento, se continúa con la construcción del modelo, como se puede ver, la variable con la que aprenderá el modelo se basa en texto que ya se ha dividido en palabras y que se debe empezar a cuantificar para poder pasar la información para que el modelo lo pueda entender.
           br
           br
           |Como se han venido desarrollando todas las unidades se realizará una serie de pasos que permitan en este caso la construcción de un modelo, para conocerlos revise con atención el recurso propuesto:
@@ -38,7 +38,7 @@
                 br
                 |El resultado es un #[em dataframe] independiente en el que se dividen los datos de aprendizaje de las clases, como se observa en la imagen.
             .col-lg-6
-              img(src='@/assets/curso/temas/tema4/2.png', alt='').mb-4
+              img(src='@/assets/curso/temas/tema4/2.png', alt='Captura de pantalla en la que se muestra el resultado de un dataframe independiente.').mb-4
               p Separación de los datos
           .row.justify-content-center.mb-5
             .col-lg-6.mb-lg-0.mb-3
@@ -384,7 +384,7 @@
             |print('Mensaje 4: ',Entrada4)</code>
     Separador
     #t_4_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 4.4 . Evaluar el modelo y análisis de errores
+      h2 4.4 Evaluar el modelo y análisis de errores
     .row.justify-content-center.mb-5
       .col-lg-2.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema4/18.svg', alt='')
       .col-lg-8

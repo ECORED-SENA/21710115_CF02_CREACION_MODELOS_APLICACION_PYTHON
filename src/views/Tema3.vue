@@ -26,10 +26,10 @@
             |Lo que quiere decir que solamente se debe dejar en la colección de datos esas dos columnas, para realizar este proceso se debe ejecutar el siguiente comando.
             br
             br
-            | #[code.codigo df=df.drop(['Unnamed: 0', 'fecha', 'ciudad'], axis=1)]
+            | <code class="codigo"> df=df.drop(['Unnamed: 0', 'fecha', 'ciudad'], axis=1) </code>
             br
             br
-            |Este comando permite eliminar del #[code.codigo dataframe] las columnas que no se quieren analizar solamente dejando nuestra variable objetivo y las de análisis. Si se ejecuta el comando #[code.codigo df.head()], se debe obtener el resultado de las primeras 5 filas, pero ya solamente de las dos columnas seleccionadas:
+            |Este comando permite eliminar del #[em dataframe] las columnas que no se quieren analizar solamente dejando nuestra variable objetivo y las de análisis. Si se ejecuta el comando #[code.codigo df.head()], se debe obtener el resultado de las primeras 5 filas, pero ya solamente de las dos columnas seleccionadas:
           .row.justify-content-center.mb-5
             .col-lg-6: img(src='@/assets/curso/temas/tema3/2.png', alt='Captura de pantalla al eliminar columnas.')
           .titulo-pasos.mb-3
@@ -84,16 +84,16 @@
               | #[code.codigo.ps-4 palabrasMalicioso = palabrasMalicioso + palabras + ' ']
               br
               br 
-              | <code class="codigo">for mensaje in df[df['salida'] == 'Malicioso'].mensaje:</code>   recorre cada elemento en los cuales la etiqueta de la columna salida coincide con Malicioso.
+              | <code class="codigo">for mensaje in df[df['salida'] == 'Malicioso'].mensaje</code>   recorre cada elemento en los cuales la etiqueta de la columna salida coincide con Malicioso.
               br
               br 
-              | #[code.codigo texto = mensaje.lower():]   convierte cada una de las coincidencias en minúscula.
+              | #[code.codigo texto = mensaje.lower()]   convierte cada una de las coincidencias en minúscula.
               br
               br 
-              | #[code.codigo tokens = nltk.word_tokenize(texto):]   separa el mensaje en una lista de todas las palabras que la conforman.
+              | #[code.codigo tokens = nltk.word_tokenize(texto)]   separa el mensaje en una lista de todas las palabras que la conforman.
               br
               br 
-              | #[code.codigo for palabras in tokens:]   recorre cada una de las palabras para ser almacenadas en una sola cadena de texto.
+              | #[code.codigo for palabras in tokens]   recorre cada una de las palabras para ser almacenadas en una sola cadena de texto.
           .titulo-pasos.mb-3
             h4.mb-0 Paso 5
           p.mb-5 El objetivo de implementar dicho código es tomar todos los mensajes que coincidan con la etiqueta de salida malicioso, convertirlas a minúsculas para estandarizar todos los textos, luego separar cada palabra en una sola cadena de texto, que servirá para analizar cuál de las palabras tienen mayor representación.
