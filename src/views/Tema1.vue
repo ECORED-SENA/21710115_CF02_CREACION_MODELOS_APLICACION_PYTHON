@@ -284,30 +284,32 @@
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         LineaTiempoD.color-primario
-          p.text-small(numero="1" titulo="Paso 1") Tabular los datos correspondientes a los atributos, de la siguiente manera: 
-            br
-            |<code class="codigo">creditos = [[5, 2, 1],[4, 1, 1],[3.5, 0, 2] [1.5, 4, 1],[1, 3, 2],[0.8, 2, 1]]</code>
-          p.text-small(numero="2" titulo="Paso 2") Convertir la lista en un array multidimensional para ello realice la importación de la librería NumPy así. 
-            br
-            |<code class="codigo"> import numpy as np</code>
-            br
-            br
-            |Luego se ejecuta este comando para convertir la lista en una matriz.
-            br
-            |<code>np.array(creditos) </code>
-            br
-            br
-            |El resultado es una matriz correspondiente a tres columnas y seis filas.
-            br
-            |<code class="codigo"> array([[5. , 2. , 1. ], [4. , 1. , 1. ] <br>[3.5, 0. , 2. ],<br>[1.5, 4. , 1. ],<br>[1. , 3. , 2. ],<br>[0.8, 2. , 1. ]]) </code>
-            br
-            br
-            |Almacene el resultado en una nueva variable:
-            br
-            |<code class="codigo">instancias=np.array(creditos)</code>
-            br
-            br
-            |Cómo se puede observar se están almacenando solo los atributos, y en una variable independiente se almacenan los resultados o clases.
+          div.text-small(numero="1" titulo="Paso 1")
+            p Tabular los datos correspondientes a los atributos, de la siguiente manera: 
+              br
+              |<code class="codigo">creditos = [[5, 2, 1],[4, 1, 1],[3.5, 0, 2] [1.5, 4, 1],[1, 3, 2],[0.8, 2, 1]]</code>
+          div.text-small(numero="2" titulo="Paso 2") 
+            p Convertir la lista en un array multidimensional para ello realice la importación de la librería NumPy así. 
+              br
+              |<code class="codigo"> import numpy as np</code>
+              br
+              br
+              |Luego se ejecuta este comando para convertir la lista en una matriz.
+              br
+              |<code>np.array(creditos) </code>
+              br
+              br
+              |El resultado es una matriz correspondiente a tres columnas y seis filas.
+              br
+              |<code class="codigo"> array([[5. , 2. , 1. ], [4. , 1. , 1. ] <br>[3.5, 0. , 2. ],<br>[1.5, 4. , 1. ],<br>[1. , 3. , 2. ],<br>[0.8, 2. , 1. ]]) </code>
+              br
+              br
+              |Almacene el resultado en una nueva variable:
+              br
+              |<code class="codigo">instancias=np.array(creditos)</code>
+              br
+              br
+              |Cómo se puede observar se están almacenando solo los atributos, y en una variable independiente se almacenan los resultados o clases.
           p.text-small(numero="3" titulo="Paso 3") Realice la tabulación de la clase, en una variable separada y coloque la tabulación de las clases de la siguiente manera.
             br
             |<code class="codigo">etiquetas=np.array([1,1,1,0,0,0])</code>
@@ -339,7 +341,7 @@
     p.mb-5(data-aos='fade-right') Las principales ventajas y desventajas de cada una de las librerías se presentan a continuación.
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-1.col-2.mb-lg-0.mb-3
+        .col-lg-1.col-5.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/2.svg', alt='').mb-2
           h4 Pandas
         .col-lg-12
@@ -370,7 +372,7 @@
         
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-1.col-2.mb-lg-0.mb-3
+        .col-lg-1.col-5.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/4.png', alt='').mb-2
           h4 Numpy
         .col-lg-12
@@ -416,7 +418,7 @@
         
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-1.col-2.mb-lg-0.mb-3
+        .col-lg-1.col-5.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/5.svg', alt='').mb-2
           h4 Matplotlib
         .col-lg-12
@@ -451,7 +453,7 @@
         
     .tarjeta.overflow-hidden.mb-5(style="background-color: #dfefee " data-aos="zoom-in")
       .row.mb-1.p-4
-        .col-lg-2.col-6.mb-lg-0.mb-3
+        .col-lg-5.col-6.mb-lg-0.mb-3
           img(src='@/assets/curso/temas/tema1/12.png', alt='' style="width: 132px").mb-2
           h4 Scikit-learn
         .col-lg-12
